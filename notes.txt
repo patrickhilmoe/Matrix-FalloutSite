@@ -1,0 +1,6 @@
+-first page
+
+are you sure you want to accept this job? Once you enter the password, there is no going back.
+with accept button ( bonus- accept only the correct password)
+
+

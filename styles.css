@@ -16,9 +16,41 @@ h1 {
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-}
+input {
+    background: #000;
+    color: white;
+    font-family: monospace;
+    padding: 1ch;
+  }
+
+  input.caret-block > span {
+    background-color: hsla(1, 1%, 100%, 1);
+    color: #000;
+  }
+
+pre {
+    background: #000;
+    color: white;
+    font-family: monospace;
+    padding: 1ch;
+  }
+
+  pre.caret-block > span {
+    background-color: hsla(1, 1%, 100%, 1);
+    color: #000;
+  }
+
+
+
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fff;
+    }
+  }
