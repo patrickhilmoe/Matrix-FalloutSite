@@ -1,3 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
     background-color: black;
 }
@@ -6,51 +26,72 @@ input {
     background-color: black;
     color: green;
     font-family: 'Monofonto', sans-serif;
+    height: 30px;
+}
+
+input[type="password"] {
+  font-size: 23px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid green;
 }
 
 h1 {
     color: green;
     font-family: 'Monofonto', sans-serif;
+    margin: 50px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.button1 {
+  color: white;
+  background-color: green;
+  border: solid grey;
+  font-size: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'Monofonto', sans-serif;
 }
 
-input {
-    background: #000;
-    color: white;
-    font-family: monospace;
-    padding: 1ch;
-  }
+.button2 {
+  color: white;
+  background-color: green;
+  border: solid grey;
+  font-size: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: 'Monofonto', sans-serif;
+  margin-left: 20px;
+}
 
-  input.caret-block > span {
-    background-color: hsla(1, 1%, 100%, 1);
-    color: #000;
-  }
+p {
+  color: green;
+}
 
-pre {
-    background: #000;
-    color: white;
-    font-family: monospace;
-    padding: 1ch;
-  }
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  color: green;
+}
 
-  pre.caret-block > span {
-    background-color: hsla(1, 1%, 100%, 1);
-    color: #000;
-  }
+.marginfirst {
+  margin: 60px;
+}
 
+.marginsecond {
+  margin: 60px;
+}
 
+.marginthird {
+  margin: 100px 130px
+}
 
-  @keyframes blink {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #fff;
-    }
-  }
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column2 {
+  flex-grow: 1;
+  width: 33%;
+}
